@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Coursework">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Coursework|create_output_tact:inst12|lpm_mux0:inst|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_23e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Coursework|create_ready_signal_reg:inst16|lpm_counter0:inst1|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_7ni.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Coursework|create_output_tact:inst12|lpm_constant0:inst7|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_4e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Coursework|create_ready_signal_reg:inst16|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_b8f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Coursework|lpm_constant0:inst9|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_4e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Coursework|lpm_constant1:inst11|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_3e6.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

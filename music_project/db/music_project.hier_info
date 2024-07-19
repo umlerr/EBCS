@@ -1,0 +1,158 @@
+|music_project
+f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+reset => music:inst1.nrst
+C => lpm_counter0:inst.clock
+note_leds[0] <= note_synt:in00st.note_leds[0]
+note_leds[1] <= note_synt:in00st.note_leds[1]
+note_leds[2] <= note_synt:in00st.note_leds[2]
+note_leds[3] <= note_synt:in00st.note_leds[3]
+note_leds[4] <= note_synt:in00st.note_leds[4]
+note_leds[5] <= note_synt:in00st.note_leds[5]
+note_leds[6] <= note_synt:in00st.note_leds[6]
+note_leds[7] <= note_synt:in00st.note_leds[7]
+
+
+|music_project|music:inst1
+nrst => note[0]~reg0.ACLR
+nrst => note[1]~reg0.ACLR
+nrst => note[2]~reg0.ACLR
+nrst => note[3]~reg0.ACLR
+nrst => music_time[0].ACLR
+nrst => music_time[1].ACLR
+nrst => music_time[2].ACLR
+nrst => music_time[3].ACLR
+nrst => music_time[4].ACLR
+nrst => music_time[5].ACLR
+nrst => music_time[6].ACLR
+nrst => music_time[7].ACLR
+nrst => music_time[8].ACLR
+clk => note[0]~reg0.CLK
+clk => note[1]~reg0.CLK
+clk => note[2]~reg0.CLK
+clk => note[3]~reg0.CLK
+clk => music_time[0].CLK
+clk => music_time[1].CLK
+clk => music_time[2].CLK
+clk => music_time[3].CLK
+clk => music_time[4].CLK
+clk => music_time[5].CLK
+clk => music_time[6].CLK
+clk => music_time[7].CLK
+clk => music_time[8].CLK
+clk => one_step.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+note[0] <= note[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+note[1] <= note[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+note[2] <= note[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+note[3] <= note[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+speak <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|music_project|lpm_counter0:inst
+clock => lpm_counter:LPM_COUNTER_component.clock
+q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
+q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
+q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
+
+
+|music_project|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component
+clock => cntr_nkh:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_nkh:auto_generated.q[0]
+q[1] <= cntr_nkh:auto_generated.q[1]
+q[2] <= cntr_nkh:auto_generated.q[2]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|music_project|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_nkh:auto_generated
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
+
+
+|music_project|note_synt:in00st
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => eocnt.CLK
+note[0] => Decoder0.IN3
+note[1] => Decoder0.IN2
+note[1] => Decoder1.IN2
+note[2] => Decoder0.IN1
+note[2] => Decoder1.IN1
+note[3] => Decoder0.IN0
+note[3] => Decoder1.IN0
+note_clock <= note_clock~reg0.DB_MAX_OUTPUT_PORT_TYPE
+note_leds[0] <= note_leds.DB_MAX_OUTPUT_PORT_TYPE
+note_leds[1] <= WideOr17.DB_MAX_OUTPUT_PORT_TYPE
+note_leds[2] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+note_leds[3] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+note_leds[4] <= WideOr16.DB_MAX_OUTPUT_PORT_TYPE
+note_leds[5] <= WideOr15.DB_MAX_OUTPUT_PORT_TYPE
+note_leds[6] <= WideOr14.DB_MAX_OUTPUT_PORT_TYPE
+note_leds[7] <= <GND>
+
+

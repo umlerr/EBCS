@@ -1,0 +1,370 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/04/2024 20:20:05"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    D_trigger
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module D_trigger_vlg_sample_tst(
+	Clk,
+	CLRN,
+	sampler_tx
+);
+input  Clk;
+input  CLRN;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(Clk or CLRN)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module D_trigger_vlg_check_tst (
+	C,
+	D,
+	DFF,
+	DLATCH,
+	x,
+	sampler_rx
+);
+input  C;
+input  D;
+input  DFF;
+input  DLATCH;
+input [3:0] x;
+input sampler_rx;
+
+reg  C_expected;
+reg  D_expected;
+reg  DFF_expected;
+reg  DLATCH_expected;
+reg [3:0] x_expected;
+
+reg  C_prev;
+reg  D_prev;
+reg  DFF_prev;
+reg  DLATCH_prev;
+reg [3:0] x_prev;
+
+reg  C_expected_prev;
+reg  D_expected_prev;
+reg  DFF_expected_prev;
+reg  DLATCH_expected_prev;
+reg [3:0] x_expected_prev;
+
+reg  last_C_exp;
+reg  last_D_exp;
+reg  last_DFF_exp;
+reg  last_DLATCH_exp;
+reg [3:0] last_x_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:5] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 5'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	C_prev = C;
+	D_prev = D;
+	DFF_prev = DFF;
+	DLATCH_prev = DLATCH;
+	x_prev = x;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	C_expected_prev = C_expected;
+	D_expected_prev = D_expected;
+	DFF_expected_prev = DFF_expected;
+	DLATCH_expected_prev = DLATCH_expected;
+	x_expected_prev = x_expected;
+end
+
+
+
+// expected C
+initial
+begin
+	C_expected = 1'bX;
+end 
+
+// expected D
+initial
+begin
+	D_expected = 1'bX;
+end 
+
+// expected DFF
+initial
+begin
+	DFF_expected = 1'bX;
+end 
+
+// expected DLATCH
+initial
+begin
+	DLATCH_expected = 1'bX;
+end 
+// expected x[ 3 ]
+initial
+begin
+	x_expected[3] = 1'bX;
+end 
+// expected x[ 2 ]
+initial
+begin
+	x_expected[2] = 1'bX;
+end 
+// expected x[ 1 ]
+initial
+begin
+	x_expected[1] = 1'bX;
+end 
+// expected x[ 0 ]
+initial
+begin
+	x_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(C_expected or C or D_expected or D or DFF_expected or DFF or DLATCH_expected or DLATCH or x_expected or x)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected C = %b | expected D = %b | expected DFF = %b | expected DLATCH = %b | expected x = %b | ",C_expected_prev,D_expected_prev,DFF_expected_prev,DLATCH_expected_prev,x_expected_prev);
+	$display("| real C = %b | real D = %b | real DFF = %b | real DLATCH = %b | real x = %b | ",C_prev,D_prev,DFF_prev,DLATCH_prev,x_prev);
+`endif
+	if (
+		( C_expected_prev !== 1'bx ) && ( C_prev !== C_expected_prev )
+		&& ((C_expected_prev !== last_C_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C_expected_prev);
+		$display ("     Real value = %b", C_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_C_exp = C_expected_prev;
+	end
+	if (
+		( D_expected_prev !== 1'bx ) && ( D_prev !== D_expected_prev )
+		&& ((D_expected_prev !== last_D_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port D :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", D_expected_prev);
+		$display ("     Real value = %b", D_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_D_exp = D_expected_prev;
+	end
+	if (
+		( DFF_expected_prev !== 1'bx ) && ( DFF_prev !== DFF_expected_prev )
+		&& ((DFF_expected_prev !== last_DFF_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DFF :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DFF_expected_prev);
+		$display ("     Real value = %b", DFF_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_DFF_exp = DFF_expected_prev;
+	end
+	if (
+		( DLATCH_expected_prev !== 1'bx ) && ( DLATCH_prev !== DLATCH_expected_prev )
+		&& ((DLATCH_expected_prev !== last_DLATCH_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DLATCH :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DLATCH_expected_prev);
+		$display ("     Real value = %b", DLATCH_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_DLATCH_exp = DLATCH_expected_prev;
+	end
+	if (
+		( x_expected_prev[0] !== 1'bx ) && ( x_prev[0] !== x_expected_prev[0] )
+		&& ((x_expected_prev[0] !== last_x_exp[0]) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port x[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", x_expected_prev);
+		$display ("     Real value = %b", x_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_x_exp[0] = x_expected_prev[0];
+	end
+	if (
+		( x_expected_prev[1] !== 1'bx ) && ( x_prev[1] !== x_expected_prev[1] )
+		&& ((x_expected_prev[1] !== last_x_exp[1]) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port x[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", x_expected_prev);
+		$display ("     Real value = %b", x_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_x_exp[1] = x_expected_prev[1];
+	end
+	if (
+		( x_expected_prev[2] !== 1'bx ) && ( x_prev[2] !== x_expected_prev[2] )
+		&& ((x_expected_prev[2] !== last_x_exp[2]) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port x[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", x_expected_prev);
+		$display ("     Real value = %b", x_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_x_exp[2] = x_expected_prev[2];
+	end
+	if (
+		( x_expected_prev[3] !== 1'bx ) && ( x_prev[3] !== x_expected_prev[3] )
+		&& ((x_expected_prev[3] !== last_x_exp[3]) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port x[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", x_expected_prev);
+		$display ("     Real value = %b", x_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_x_exp[3] = x_expected_prev[3];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#640000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module D_trigger_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Clk;
+reg CLRN;
+// wires                                               
+wire C;
+wire D;
+wire DFF;
+wire DLATCH;
+wire [3:0] x;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+D_trigger i1 (
+// port map - connection between master ports and signals/registers   
+	.C(C),
+	.Clk(Clk),
+	.CLRN(CLRN),
+	.D(D),
+	.DFF(DFF),
+	.DLATCH(DLATCH),
+	.x(x)
+);
+
+// CLRN
+initial
+begin
+	CLRN = 1'b1;
+end 
+
+// Clk
+always
+begin
+	Clk = 1'b0;
+	Clk = #10000 1'b1;
+	#10000;
+end 
+
+D_trigger_vlg_sample_tst tb_sample (
+	.Clk(Clk),
+	.CLRN(CLRN),
+	.sampler_tx(sampler)
+);
+
+D_trigger_vlg_check_tst tb_out(
+	.C(C),
+	.D(D),
+	.DFF(DFF),
+	.DLATCH(DLATCH),
+	.x(x),
+	.sampler_rx(sampler)
+);
+endmodule
+

@@ -1,0 +1,68 @@
+|Lab6_1
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= inst555.DB_MAX_OUTPUT_PORT_TYPE
+R_clrn[0] => inst.ACLR
+R_clrn[1] => inst1.ACLR
+R_clrn[2] => inst2.ACLR
+R_clrn[3] => inst3.ACLR
+R_clrn[4] => inst4.ACLR
+R_clrn[5] => inst5.ACLR
+R_clrn[6] => inst6.ACLR
+R_clrn[7] => inst7.ACLR
+R_clrn[8] => inst16.ACLR
+C => inst6.CLK
+C => inst.CLK
+C => inst1.CLK
+C => inst2.CLK
+C => inst3.CLK
+C => inst4.CLK
+C => inst5.CLK
+C => inst7.CLK
+C => inst16.CLK
+C => inst17.IN0
+C => inst18.IN0
+C => inst19.IN0
+C => inst20.IN0
+C => inst21.IN0
+C => inst22.IN0
+C => inst23.IN0
+C => inst24.IN0
+C => inst25.IN0
+R_prn[0] => inst.PRESET
+R_prn[1] => inst1.PRESET
+R_prn[2] => inst2.PRESET
+R_prn[3] => inst3.PRESET
+R_prn[4] => inst4.PRESET
+R_prn[5] => inst5.PRESET
+R_prn[6] => inst6.PRESET
+R_prn[7] => inst7.PRESET
+R_prn[8] => inst16.PRESET
+W_en => inst28.IN1
+Q_out[0] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[1] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[2] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[3] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[4] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[6] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[7] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[8] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[9] <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_1|lpm_constant0:inst666
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+
+
+|Lab6_1|lpm_constant0:inst666|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+
+

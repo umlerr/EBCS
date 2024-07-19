@@ -1,0 +1,363 @@
+# do Lab5_2.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lab5_2
+# 
+# Top level modules:
+# 	Lab5_2
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lab5_2_vlg_sample_tst
+# -- Compiling module Lab5_2_vlg_check_tst
+# -- Compiling module Lab5_2_vlg_vec_tst
+# 
+# Top level modules:
+# 	Lab5_2_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Lab5_2_vlg_vec_tst 
+# Loading work.Lab5_2_vlg_vec_tst
+# Loading work.Lab5_2
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading work.Lab5_2_vlg_sample_tst
+# Loading work.Lab5_2_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from Lab5_2_v.sdo
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from Lab5_2_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst File: Lab5_2.vt
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:27790 ps, datain:28014 ps, 306 ps );
+#    Time: 28014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:37790 ps, datain:37947 ps, 306 ps );
+#    Time: 37947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:37790 ps, datain:37947 ps, 306 ps );
+#    Time: 37947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:47790 ps, datain:47915 ps, 306 ps );
+#    Time: 47915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:47790 ps, datain:47947 ps, 306 ps );
+#    Time: 47947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:47790 ps, datain:47947 ps, 306 ps );
+#    Time: 47947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:47790 ps, datain:47948 ps, 306 ps );
+#    Time: 47948 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:57790 ps, datain:57903 ps, 306 ps );
+#    Time: 57903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:57790 ps, datain:57947 ps, 306 ps );
+#    Time: 57947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:57790 ps, datain:57947 ps, 306 ps );
+#    Time: 57947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:67790 ps, datain:68014 ps, 306 ps );
+#    Time: 68014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:87790 ps, datain:87947 ps, 306 ps );
+#    Time: 87947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:87790 ps, datain:88014 ps, 306 ps );
+#    Time: 88014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:97790 ps, datain:97903 ps, 306 ps );
+#    Time: 97903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:97790 ps, datain:97947 ps, 306 ps );
+#    Time: 97947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:107790 ps, datain:107947 ps, 306 ps );
+#    Time: 107947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:107790 ps, datain:108014 ps, 306 ps );
+#    Time: 108014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:127790 ps, datain:127915 ps, 306 ps );
+#    Time: 127915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:127790 ps, datain:127947 ps, 306 ps );
+#    Time: 127947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:127790 ps, datain:128014 ps, 306 ps );
+#    Time: 128014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:137790 ps, datain:137947 ps, 306 ps );
+#    Time: 137947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:137790 ps, datain:137947 ps, 306 ps );
+#    Time: 137947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:147790 ps, datain:147915 ps, 306 ps );
+#    Time: 147915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:147790 ps, datain:148014 ps, 306 ps );
+#    Time: 148014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:167790 ps, datain:167947 ps, 306 ps );
+#    Time: 167947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:167790 ps, datain:167947 ps, 306 ps );
+#    Time: 167947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:177790 ps, datain:177903 ps, 306 ps );
+#    Time: 177903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:177790 ps, datain:177947 ps, 306 ps );
+#    Time: 177947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:187790 ps, datain:187947 ps, 306 ps );
+#    Time: 187947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:187790 ps, datain:188014 ps, 306 ps );
+#    Time: 188014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:207790 ps, datain:207915 ps, 306 ps );
+#    Time: 207915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:207790 ps, datain:207947 ps, 306 ps );
+#    Time: 207947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:207790 ps, datain:207947 ps, 306 ps );
+#    Time: 207947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:217790 ps, datain:217903 ps, 306 ps );
+#    Time: 217903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:217790 ps, datain:217947 ps, 306 ps );
+#    Time: 217947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:217790 ps, datain:217947 ps, 306 ps );
+#    Time: 217947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:227790 ps, datain:228014 ps, 306 ps );
+#    Time: 228014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:247790 ps, datain:247947 ps, 306 ps );
+#    Time: 247947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:257790 ps, datain:257903 ps, 306 ps );
+#    Time: 257903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:257790 ps, datain:257948 ps, 306 ps );
+#    Time: 257948 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:267790 ps, datain:267903 ps, 306 ps );
+#    Time: 267903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:267790 ps, datain:267947 ps, 306 ps );
+#    Time: 267947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:267790 ps, datain:268012 ps, 306 ps );
+#    Time: 268012 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:267790 ps, datain:268014 ps, 306 ps );
+#    Time: 268014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:287790 ps, datain:287915 ps, 306 ps );
+#    Time: 287915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:287790 ps, datain:287947 ps, 306 ps );
+#    Time: 287947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:297790 ps, datain:297947 ps, 306 ps );
+#    Time: 297947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:297790 ps, datain:297948 ps, 306 ps );
+#    Time: 297948 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:307790 ps, datain:307915 ps, 306 ps );
+#    Time: 307915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:307790 ps, datain:308012 ps, 306 ps );
+#    Time: 308012 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:307790 ps, datain:308014 ps, 306 ps );
+#    Time: 308014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:327790 ps, datain:327947 ps, 306 ps );
+#    Time: 327947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:327790 ps, datain:328014 ps, 306 ps );
+#    Time: 328014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:337790 ps, datain:337903 ps, 306 ps );
+#    Time: 337903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:337790 ps, datain:337947 ps, 306 ps );
+#    Time: 337947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:337790 ps, datain:337947 ps, 306 ps );
+#    Time: 337947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:357790 ps, datain:357947 ps, 306 ps );
+#    Time: 357947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:367790 ps, datain:367915 ps, 306 ps );
+#    Time: 367915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:367790 ps, datain:367947 ps, 306 ps );
+#    Time: 367947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:367790 ps, datain:368014 ps, 306 ps );
+#    Time: 368014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:377790 ps, datain:377903 ps, 306 ps );
+#    Time: 377903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:377790 ps, datain:377947 ps, 306 ps );
+#    Time: 377947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:377790 ps, datain:377947 ps, 306 ps );
+#    Time: 377947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:397790 ps, datain:397947 ps, 306 ps );
+#    Time: 397947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:407790 ps, datain:408014 ps, 306 ps );
+#    Time: 408014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:417790 ps, datain:417903 ps, 306 ps );
+#    Time: 417903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:417790 ps, datain:417947 ps, 306 ps );
+#    Time: 417947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:417790 ps, datain:417947 ps, 306 ps );
+#    Time: 417947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:437790 ps, datain:437947 ps, 306 ps );
+#    Time: 437947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:447790 ps, datain:447915 ps, 306 ps );
+#    Time: 447915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:447790 ps, datain:448014 ps, 306 ps );
+#    Time: 448014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:457790 ps, datain:457947 ps, 306 ps );
+#    Time: 457947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:457790 ps, datain:457947 ps, 306 ps );
+#    Time: 457947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:467790 ps, datain:467915 ps, 306 ps );
+#    Time: 467915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:467790 ps, datain:468012 ps, 306 ps );
+#    Time: 468012 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:467790 ps, datain:468014 ps, 306 ps );
+#    Time: 468014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:477790 ps, datain:477947 ps, 306 ps );
+#    Time: 477947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:487790 ps, datain:487947 ps, 306 ps );
+#    Time: 487947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:497790 ps, datain:497903 ps, 306 ps );
+#    Time: 497903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:497790 ps, datain:497947 ps, 306 ps );
+#    Time: 497947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:497790 ps, datain:497947 ps, 306 ps );
+#    Time: 497947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:497790 ps, datain:497948 ps, 306 ps );
+#    Time: 497948 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:507790 ps, datain:508014 ps, 306 ps );
+#    Time: 508014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:527790 ps, datain:527915 ps, 306 ps );
+#    Time: 527915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:527790 ps, datain:527947 ps, 306 ps );
+#    Time: 527947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:537790 ps, datain:537903 ps, 306 ps );
+#    Time: 537903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:537790 ps, datain:537947 ps, 306 ps );
+#    Time: 537947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:537790 ps, datain:537947 ps, 306 ps );
+#    Time: 537947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:537790 ps, datain:537948 ps, 306 ps );
+#    Time: 537948 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:547790 ps, datain:548014 ps, 306 ps );
+#    Time: 548014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:577790 ps, datain:577903 ps, 306 ps );
+#    Time: 577903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:577790 ps, datain:577947 ps, 306 ps );
+#    Time: 577947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:587790 ps, datain:587903 ps, 306 ps );
+#    Time: 587903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:587790 ps, datain:588012 ps, 306 ps );
+#    Time: 588012 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:597790 ps, datain:597947 ps, 306 ps );
+#    Time: 597947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:607790 ps, datain:607915 ps, 306 ps );
+#    Time: 607915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:617790 ps, datain:617947 ps, 306 ps );
+#    Time: 617947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:627790 ps, datain:627915 ps, 306 ps );
+#    Time: 627915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:627790 ps, datain:628012 ps, 306 ps );
+#    Time: 628012 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:627790 ps, datain:628014 ps, 306 ps );
+#    Time: 628014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:637790 ps, datain:637947 ps, 306 ps );
+#    Time: 637947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:647790 ps, datain:647947 ps, 306 ps );
+#    Time: 647947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:647790 ps, datain:647947 ps, 306 ps );
+#    Time: 647947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:647790 ps, datain:648014 ps, 306 ps );
+#    Time: 648014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:657790 ps, datain:657903 ps, 306 ps );
+#    Time: 657903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:657790 ps, datain:657947 ps, 306 ps );
+#    Time: 657947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:667790 ps, datain:667947 ps, 306 ps );
+#    Time: 667947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:667790 ps, datain:668014 ps, 306 ps );
+#    Time: 668014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:687790 ps, datain:687915 ps, 306 ps );
+#    Time: 687915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:687790 ps, datain:687947 ps, 306 ps );
+#    Time: 687947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:687790 ps, datain:687947 ps, 306 ps );
+#    Time: 687947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:687790 ps, datain:688014 ps, 306 ps );
+#    Time: 688014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:697790 ps, datain:697903 ps, 306 ps );
+#    Time: 697903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:697790 ps, datain:697947 ps, 306 ps );
+#    Time: 697947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:697790 ps, datain:697947 ps, 306 ps );
+#    Time: 697947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:707790 ps, datain:708014 ps, 306 ps );
+#    Time: 708014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:727790 ps, datain:727947 ps, 306 ps );
+#    Time: 727947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:727790 ps, datain:728014 ps, 306 ps );
+#    Time: 728014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:737790 ps, datain:737903 ps, 306 ps );
+#    Time: 737903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:737790 ps, datain:737947 ps, 306 ps );
+#    Time: 737947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:747790 ps, datain:747947 ps, 306 ps );
+#    Time: 747947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:747790 ps, datain:748014 ps, 306 ps );
+#    Time: 748014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:767790 ps, datain:767915 ps, 306 ps );
+#    Time: 767915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:767790 ps, datain:767947 ps, 306 ps );
+#    Time: 767947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:767790 ps, datain:768014 ps, 306 ps );
+#    Time: 768014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:777790 ps, datain:777947 ps, 306 ps );
+#    Time: 777947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:777790 ps, datain:777947 ps, 306 ps );
+#    Time: 777947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:787790 ps, datain:787915 ps, 306 ps );
+#    Time: 787915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:787790 ps, datain:788014 ps, 306 ps );
+#    Time: 788014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:807790 ps, datain:807947 ps, 306 ps );
+#    Time: 807947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:807790 ps, datain:807947 ps, 306 ps );
+#    Time: 807947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:817790 ps, datain:817903 ps, 306 ps );
+#    Time: 817903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:817790 ps, datain:817947 ps, 306 ps );
+#    Time: 817947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:827790 ps, datain:827947 ps, 306 ps );
+#    Time: 827947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:827790 ps, datain:828014 ps, 306 ps );
+#    Time: 828014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:847790 ps, datain:847915 ps, 306 ps );
+#    Time: 847915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:847790 ps, datain:847947 ps, 306 ps );
+#    Time: 847947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:847790 ps, datain:847947 ps, 306 ps );
+#    Time: 847947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:857790 ps, datain:857903 ps, 306 ps );
+#    Time: 857903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:857790 ps, datain:857947 ps, 306 ps );
+#    Time: 857947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:857790 ps, datain:857947 ps, 306 ps );
+#    Time: 857947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:867790 ps, datain:868014 ps, 306 ps );
+#    Time: 868014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:887790 ps, datain:887947 ps, 306 ps );
+#    Time: 887947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:897790 ps, datain:897903 ps, 306 ps );
+#    Time: 897903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:897790 ps, datain:897948 ps, 306 ps );
+#    Time: 897948 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:907790 ps, datain:907903 ps, 306 ps );
+#    Time: 907903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:907790 ps, datain:907947 ps, 306 ps );
+#    Time: 907947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:907790 ps, datain:908012 ps, 306 ps );
+#    Time: 908012 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:907790 ps, datain:908014 ps, 306 ps );
+#    Time: 908014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:927790 ps, datain:927915 ps, 306 ps );
+#    Time: 927915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:927790 ps, datain:927947 ps, 306 ps );
+#    Time: 927947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:937790 ps, datain:937947 ps, 306 ps );
+#    Time: 937947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:937790 ps, datain:937948 ps, 306 ps );
+#    Time: 937948 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:947790 ps, datain:947915 ps, 306 ps );
+#    Time: 947915 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:947790 ps, datain:948012 ps, 306 ps );
+#    Time: 948012 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:947790 ps, datain:948014 ps, 306 ps );
+#    Time: 948014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:967790 ps, datain:967947 ps, 306 ps );
+#    Time: 967947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:967790 ps, datain:968014 ps, 306 ps );
+#    Time: 968014 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D1
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:977790 ps, datain:977903 ps, 306 ps );
+#    Time: 977903 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D3
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:977790 ps, datain:977947 ps, 306 ps );
+#    Time: 977947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:977790 ps, datain:977947 ps, 306 ps );
+#    Time: 977947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D2
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:997790 ps, datain:997947 ps, 306 ps );
+#    Time: 997947 ps  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/i1/D0
+# Simulation passed !
+# ** Note: $finish    : Lab5_2.vt(207)
+#    Time: 1 us  Iteration: 0  Instance: /Lab5_2_vlg_vec_tst/tb_out

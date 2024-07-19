@@ -1,0 +1,62 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CODING\CADWork\CW\reg\simulation\qsim
+vreg
+Z1 INgSeWz>l0l1=Rn7KVGT@;0
+Z2 V@Zj@iDFGn63TEELe48LR11
+Z3 dD:\CODING\CADWork\CW\reg\simulation\qsim
+Z4 w1715779785
+Z5 8reg.vo
+Z6 Freg.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 ;lKcnhbWVbGmJFAf^ameF3
+!s85 0
+Z10 !s108 1715779786.544000
+Z11 !s107 reg.vo|
+Z12 !s90 -work|work|reg.vo|
+!s101 -O0
+vreg_vlg_check_tst
+!i10b 1
+!s100 fg22K>9hCgR[D@kfLAGzc3
+I^hPojkYeFGCJhMV;XjJ>e3
+V7`LcobS<ZI;WK;4KGUgCR0
+R3
+Z13 w1715779784
+Z14 8reg.vt
+Z15 Freg.vt
+L0 69
+R7
+r1
+!s85 0
+31
+Z16 !s108 1715779786.644000
+Z17 !s107 reg.vt|
+Z18 !s90 -work|work|reg.vt|
+!s101 -O0
+R8
+vreg_vlg_sample_tst
+!i10b 1
+!s100 jL8dDPEI21e3aH7L1[]oI3
+I<h^30864i=kD?37Wg<EQh3
+V7:_Ng]UWf;VU;DDGY=WgS1
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

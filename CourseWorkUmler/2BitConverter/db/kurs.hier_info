@@ -1,0 +1,198 @@
+|Converter-2-Bit-Parallel-Code-To-PWM
+PWM <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+noCLK => inst666.IN0
+Select[0] => lpm_mux0:inst3.sel[0]
+Select[1] => lpm_mux0:inst3.sel[1]
+Write => 2-Bit-Register:inst4.CLK
+Data[0] => 2-Bit-Register:inst4.D[0]
+Data[1] => 2-Bit-Register:inst4.D[1]
+Start => inst6.IN1
+qCounter[0] <= 3-Bit-Reset-Counter:inst.q[0]
+qCounter[1] <= 3-Bit-Reset-Counter:inst.q[1]
+qCounter[2] <= 3-Bit-Reset-Counter:inst.q[2]
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|AsynhronusRS:inst20
+Q <= inst0.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+R => inst0.IN1
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|Comparing-Scheme:inst5
+R <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+q1[0] => inst0.IN0
+q1[1] => inst1.IN0
+reg[0] => inst0.IN1
+reg[1] => inst1.IN1
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|3-Bit-Reset-Counter:inst
+q[0] <= lpm_counter1:inst3.q[0]
+q[1] <= lpm_counter1:inst3.q[1]
+q[2] <= lpm_counter1:inst3.q[2]
+CLK => lpm_counter1:inst3.clock
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|3-Bit-Reset-Counter:inst|lpm_counter1:inst3
+clock => lpm_counter:LPM_COUNTER_component.clock
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
+q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
+q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|3-Bit-Reset-Counter:inst|lpm_counter1:inst3|lpm_counter:LPM_COUNTER_component
+clock => cntr_b3i:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_b3i:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_b3i:auto_generated.q[0]
+q[1] <= cntr_b3i:auto_generated.q[1]
+q[2] <= cntr_b3i:auto_generated.q[2]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|3-Bit-Reset-Counter:inst|lpm_counter1:inst3|lpm_counter:LPM_COUNTER_component|cntr_b3i:auto_generated
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
+sclr => _~0.IN0
+sclr => _~3.IN0
+sclr => _~14.IN0
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|lpm_mux0:inst3
+data0 => LPM_MUX:LPM_MUX_component.DATA[0][0]
+data1 => LPM_MUX:LPM_MUX_component.DATA[1][0]
+data2 => LPM_MUX:LPM_MUX_component.DATA[2][0]
+sel[0] => LPM_MUX:LPM_MUX_component.SEL[0]
+sel[1] => LPM_MUX:LPM_MUX_component.SEL[1]
+result <= LPM_MUX:LPM_MUX_component.RESULT[0]
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component
+data[0][0] => mux_23e:auto_generated.data[0]
+data[1][0] => mux_23e:auto_generated.data[1]
+data[2][0] => mux_23e:auto_generated.data[2]
+sel[0] => mux_23e:auto_generated.sel[0]
+sel[1] => mux_23e:auto_generated.sel[1]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_23e:auto_generated.result[0]
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component|mux_23e:auto_generated
+data[0] => data0_wire[0].IN0
+data[1] => data1_wire[0].IN0
+data[2] => data2_wire[0].IN0
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => data0_wire[0]~0.IN0
+sel[0] => data1_wire[0].IN1
+sel[1] => data2_wire[0].IN1
+sel[1] => _~1.IN0
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|lpm_counter0:inst2
+clock => lpm_counter:LPM_COUNTER_component.clock
+q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
+q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
+q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component
+clock => cntr_nkh:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_nkh:auto_generated.q[0]
+q[1] <= cntr_nkh:auto_generated.q[1]
+q[2] <= cntr_nkh:auto_generated.q[2]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_nkh:auto_generated
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|2-Bit-Register:inst4
+Q[0] <= inst0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst0.CLK
+CLK => inst1.CLK
+D[0] => inst0.DATAIN
+D[1] => inst1.DATAIN
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|lpm_constant0:inst1
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+
+
+|Converter-2-Bit-Parallel-Code-To-PWM|lpm_constant0:inst1|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+
+

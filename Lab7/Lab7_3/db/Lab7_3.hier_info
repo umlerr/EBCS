@@ -1,0 +1,11 @@
+|Lab7_3
+D[0] <= instdff4.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= instdff3.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= instdff2.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= instdff1.DB_MAX_OUTPUT_PORT_TYPE
+C => instdff1.CLK
+C => instdff3.CLK
+C => instdff2.CLK
+C => instdff4.CLK
+
+

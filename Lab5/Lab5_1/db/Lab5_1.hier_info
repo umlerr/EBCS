@@ -1,0 +1,24 @@
+|Lab5_1
+Q0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+PRN_RESET => inst6.PRESET
+PRN_RESET => inst5.PRESET
+PRN_RESET => inst4.PRESET
+PRN_RESET => inst.PRESET
+S0 => inst6.IN1
+R0 => inst6.IN0
+C_DOWN => inst2.IN0
+OE_H => inst8.IN1
+OE_H => inst7.IN1
+OE_H => inst3.IN1
+OE_H => inst1.IN1
+Q1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst5.IN1
+R1 => inst5.IN0
+Q2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S2 => inst4.IN1
+R2 => inst4.IN0
+Q3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S3 => inst.IN1
+R3 => inst.IN0
+
+

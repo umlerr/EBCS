@@ -1,0 +1,13 @@
+# do reg.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg
+# 
+# Top level modules:
+# 	reg
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_vlg_sample_tst
+# -- Compiling module reg_vlg_check_tst
+# -- Compiling module reg_vlg_vec_tst
+# ** Error: reg.vt(578): near "(": syntax error, unexpected '(', expecting ';' or ','
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./reg.do line 4

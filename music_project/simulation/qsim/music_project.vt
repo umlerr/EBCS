@@ -1,0 +1,360 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/18/2024 11:41:41"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    music_project
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module music_project_vlg_sample_tst(
+	C,
+	reset,
+	sampler_tx
+);
+input  C;
+input  reset;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(C or reset)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module music_project_vlg_check_tst (
+	f,
+	note_leds,
+	sampler_rx
+);
+input  f;
+input [7:0] note_leds;
+input sampler_rx;
+
+reg  f_expected;
+reg [7:0] note_leds_expected;
+
+reg  f_prev;
+reg [7:0] note_leds_prev;
+
+reg  f_expected_prev;
+reg [7:0] note_leds_expected_prev;
+
+reg  last_f_exp;
+reg [7:0] last_note_leds_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:2] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 2'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	f_prev = f;
+	note_leds_prev = note_leds;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	f_expected_prev = f_expected;
+	note_leds_expected_prev = note_leds_expected;
+end
+
+
+
+// expected f
+initial
+begin
+	f_expected = 1'bX;
+end 
+// expected note_leds[ 7 ]
+initial
+begin
+	note_leds_expected[7] = 1'bX;
+	note_leds_expected[7] = #999000 1'b0;
+end 
+// expected note_leds[ 6 ]
+initial
+begin
+	note_leds_expected[6] = 1'bX;
+	note_leds_expected[6] = #999000 1'b0;
+end 
+// expected note_leds[ 5 ]
+initial
+begin
+	note_leds_expected[5] = 1'bX;
+	note_leds_expected[5] = #999000 1'b0;
+end 
+// expected note_leds[ 4 ]
+initial
+begin
+	note_leds_expected[4] = 1'bX;
+	note_leds_expected[4] = #999000 1'b0;
+end 
+// expected note_leds[ 3 ]
+initial
+begin
+	note_leds_expected[3] = 1'bX;
+	note_leds_expected[3] = #999000 1'b0;
+end 
+// expected note_leds[ 2 ]
+initial
+begin
+	note_leds_expected[2] = 1'bX;
+	note_leds_expected[2] = #999000 1'b0;
+end 
+// expected note_leds[ 1 ]
+initial
+begin
+	note_leds_expected[1] = 1'bX;
+	note_leds_expected[1] = #999000 1'b0;
+end 
+// expected note_leds[ 0 ]
+initial
+begin
+	note_leds_expected[0] = 1'bX;
+	note_leds_expected[0] = #999000 1'b0;
+end 
+// generate trigger
+always @(f_expected or f or note_leds_expected or note_leds)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected f = %b | expected note_leds = %b | ",f_expected_prev,note_leds_expected_prev);
+	$display("| real f = %b | real note_leds = %b | ",f_prev,note_leds_prev);
+`endif
+	if (
+		( f_expected_prev !== 1'bx ) && ( f_prev !== f_expected_prev )
+		&& ((f_expected_prev !== last_f_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port f :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", f_expected_prev);
+		$display ("     Real value = %b", f_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_f_exp = f_expected_prev;
+	end
+	if (
+		( note_leds_expected_prev[0] !== 1'bx ) && ( note_leds_prev[0] !== note_leds_expected_prev[0] )
+		&& ((note_leds_expected_prev[0] !== last_note_leds_exp[0]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port note_leds[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", note_leds_expected_prev);
+		$display ("     Real value = %b", note_leds_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_note_leds_exp[0] = note_leds_expected_prev[0];
+	end
+	if (
+		( note_leds_expected_prev[1] !== 1'bx ) && ( note_leds_prev[1] !== note_leds_expected_prev[1] )
+		&& ((note_leds_expected_prev[1] !== last_note_leds_exp[1]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port note_leds[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", note_leds_expected_prev);
+		$display ("     Real value = %b", note_leds_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_note_leds_exp[1] = note_leds_expected_prev[1];
+	end
+	if (
+		( note_leds_expected_prev[2] !== 1'bx ) && ( note_leds_prev[2] !== note_leds_expected_prev[2] )
+		&& ((note_leds_expected_prev[2] !== last_note_leds_exp[2]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port note_leds[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", note_leds_expected_prev);
+		$display ("     Real value = %b", note_leds_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_note_leds_exp[2] = note_leds_expected_prev[2];
+	end
+	if (
+		( note_leds_expected_prev[3] !== 1'bx ) && ( note_leds_prev[3] !== note_leds_expected_prev[3] )
+		&& ((note_leds_expected_prev[3] !== last_note_leds_exp[3]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port note_leds[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", note_leds_expected_prev);
+		$display ("     Real value = %b", note_leds_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_note_leds_exp[3] = note_leds_expected_prev[3];
+	end
+	if (
+		( note_leds_expected_prev[4] !== 1'bx ) && ( note_leds_prev[4] !== note_leds_expected_prev[4] )
+		&& ((note_leds_expected_prev[4] !== last_note_leds_exp[4]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port note_leds[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", note_leds_expected_prev);
+		$display ("     Real value = %b", note_leds_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_note_leds_exp[4] = note_leds_expected_prev[4];
+	end
+	if (
+		( note_leds_expected_prev[5] !== 1'bx ) && ( note_leds_prev[5] !== note_leds_expected_prev[5] )
+		&& ((note_leds_expected_prev[5] !== last_note_leds_exp[5]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port note_leds[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", note_leds_expected_prev);
+		$display ("     Real value = %b", note_leds_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_note_leds_exp[5] = note_leds_expected_prev[5];
+	end
+	if (
+		( note_leds_expected_prev[6] !== 1'bx ) && ( note_leds_prev[6] !== note_leds_expected_prev[6] )
+		&& ((note_leds_expected_prev[6] !== last_note_leds_exp[6]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port note_leds[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", note_leds_expected_prev);
+		$display ("     Real value = %b", note_leds_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_note_leds_exp[6] = note_leds_expected_prev[6];
+	end
+	if (
+		( note_leds_expected_prev[7] !== 1'bx ) && ( note_leds_prev[7] !== note_leds_expected_prev[7] )
+		&& ((note_leds_expected_prev[7] !== last_note_leds_exp[7]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port note_leds[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", note_leds_expected_prev);
+		$display ("     Real value = %b", note_leds_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_note_leds_exp[7] = note_leds_expected_prev[7];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#100000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module music_project_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg C;
+reg reset;
+// wires                                               
+wire f;
+wire [7:0] note_leds;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+music_project i1 (
+// port map - connection between master ports and signals/registers   
+	.C(C),
+	.f(f),
+	.note_leds(note_leds),
+	.reset(reset)
+);
+
+// C
+always
+begin
+	C = 1'b0;
+	C = #12500 1'b1;
+	#12500;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b1;
+end 
+
+music_project_vlg_sample_tst tb_sample (
+	.C(C),
+	.reset(reset),
+	.sampler_tx(sampler)
+);
+
+music_project_vlg_check_tst tb_out(
+	.f(f),
+	.note_leds(note_leds),
+	.sampler_rx(sampler)
+);
+endmodule
+

@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CODING\CADWork\Pract2_Misha\simulation\qsim
+vPract2_Misha
+Z1 !s100 Ac[jhJ@D9ojSG5^3fRfY<0
+Z2 IoUNE=K0MYhHH`cUiHdOXh2
+Z3 VFM3]lg=F>RfKB3FU>j@ON2
+Z4 dD:\CODING\CADWork\Pract2_Misha\simulation\qsim
+Z5 w1712851551
+Z6 8Pract2_Misha.vo
+Z7 FPract2_Misha.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Pract2_Misha.vo|
+Z10 o-work work -O0
+Z11 n@pract2_@misha
+!i10b 1
+!s85 0
+Z12 !s108 1712851552.502000
+Z13 !s107 Pract2_Misha.vo|
+!s101 -O0
+vPract2_Misha_vlg_sample_tst
+!i10b 1
+Z14 !s100 [dg@eHfGMcG^7hKa=Nfio1
+Z15 I5a[<JGdbae;LT<Q5PkUkU2
+Z16 V^a8fXGMW[_^z0n9_`P;i^3
+R4
+R5
+Z17 8Pract2_Misha.vt
+Z18 FPract2_Misha.vt
+L0 29
+R8
+r1
+!s85 0
+31
+!s108 1712851552.555000
+!s107 Pract2_Misha.vt|
+Z19 !s90 -work|work|Pract2_Misha.vt|
+!s101 -O0
+R10
+Z20 n@pract2_@misha_vlg_sample_tst

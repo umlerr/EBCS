@@ -1,0 +1,36 @@
+# do RS_trigger.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RS_trigger
+# 
+# Top level modules:
+# 	RS_trigger
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RS_trigger_vlg_sample_tst
+# -- Compiling module RS_trigger_vlg_check_tst
+# -- Compiling module RS_trigger_vlg_vec_tst
+# 
+# Top level modules:
+# 	RS_trigger_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.RS_trigger_vlg_vec_tst 
+# Loading work.RS_trigger_vlg_vec_tst
+# Loading work.RS_trigger
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading work.RS_trigger_vlg_sample_tst
+# Loading work.RS_trigger_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from RS_trigger_v.sdo
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from RS_trigger_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /RS_trigger_vlg_vec_tst File: RS_trigger.vt
+# Simulation passed !
+# ** Note: $finish    : RS_trigger.vt(208)
+#    Time: 1 us  Iteration: 0  Instance: /RS_trigger_vlg_vec_tst/tb_out

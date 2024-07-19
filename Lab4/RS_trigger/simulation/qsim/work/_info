@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CODING\CADWork\Lab4\RS_trigger\simulation\qsim
+vRS_trigger
+Z1 IzHLWNYgG51VFH9<zScA1Z3
+Z2 Vn7JZ>U=j4<e6nLjWi=RaF3
+Z3 dD:\CODING\CADWork\Lab4\RS_trigger\simulation\qsim
+Z4 w1712250578
+Z5 8RS_trigger.vo
+Z6 FRS_trigger.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|RS_trigger.vo|
+Z9 o-work work -O0
+Z10 n@r@s_trigger
+!i10b 1
+Z11 !s100 SESKAeI_^O`D:Y=X`h4=:2
+!s85 0
+Z12 !s108 1712250579.515000
+Z13 !s107 RS_trigger.vo|
+!s101 -O0
+vRS_trigger_vlg_check_tst
+!i10b 1
+Z14 !s100 ah^iFKf_EC_a1hUd4=OOa1
+Z15 IVL57EF;UgA381zlJcf=W^1
+Z16 VP?4jWWk]M4TbHKoll:iJ:1
+R3
+R4
+Z17 8RS_trigger.vt
+Z18 FRS_trigger.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z19 !s108 1712250579.567000
+Z20 !s107 RS_trigger.vt|
+Z21 !s90 -work|work|RS_trigger.vt|
+!s101 -O0
+R9
+Z22 n@r@s_trigger_vlg_check_tst
+vRS_trigger_vlg_sample_tst
+!i10b 1
+Z23 !s100 F8W:K1hf=CaU@Fh:L^V[Y2
+Z24 I1RW=l^ZGjmC95E@QCS0bl1
+Z25 VLSi?a[?2N_M?[@1oz0V193
+R3
+R4
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+Z26 n@r@s_trigger_vlg_sample_tst
+vRS_trigger_vlg_vec_tst
+!i10b 1
+Z27 !s100 ;PV9LVVQeYQmB>dG:5?U42
+Z28 IR8CDd<^GRz:96i``;kBX20
+Z29 V[G7`B5NQQcm_TFd?oJTc_0
+R3
+R4
+R17
+R18
+Z30 L0 212
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+Z31 n@r@s_trigger_vlg_vec_tst

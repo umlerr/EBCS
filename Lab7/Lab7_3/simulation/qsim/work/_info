@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CODING\CADWork\Lab7\Lab7_3\simulation\qsim
+vLab7_3
+Z1 I9YmF<1S:;g4m1^:ma_ob=2
+Z2 VI?XZ9;Q@GX^W>?iQG682a2
+Z3 dD:\CODING\CADWork\Lab7\Lab7_3\simulation\qsim
+Z4 w1712838816
+Z5 8Lab7_3.vo
+Z6 FLab7_3.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Lab7_3.vo|
+Z9 o-work work -O0
+Z10 n@lab7_3
+!i10b 1
+Z11 !s100 k;`LXVo_@e99XVmF2`7c@1
+!s85 0
+Z12 !s108 1712838816.975000
+Z13 !s107 Lab7_3.vo|
+!s101 -O0
+vLab7_3_vlg_check_tst
+!i10b 1
+Z14 !s100 96_6]:@Dcn^?=>J[@1kfG1
+Z15 IkbQEA_oPIV7VU6U[GlooD3
+Z16 VCfX;ELC=OG4GhcUNI5hD71
+R3
+Z17 w1712838815
+Z18 8Lab7_3.vt
+Z19 FLab7_3.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z20 !s108 1712838817.023000
+Z21 !s107 Lab7_3.vt|
+Z22 !s90 -work|work|Lab7_3.vt|
+!s101 -O0
+R9
+Z23 n@lab7_3_vlg_check_tst
+vLab7_3_vlg_sample_tst
+!i10b 1
+Z24 !s100 @@nka:GDCn54GaSg;JA2E3
+Z25 IUfIB]Ve_HJ^UI:i;4:kj40
+Z26 V5T1BCOYm_70@`Ag;Z]UIR2
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@lab7_3_vlg_sample_tst
+vLab7_3_vlg_vec_tst
+!i10b 1
+Z28 !s100 clD4B?2mggXfdS1c0cXcm1
+Z29 IL;X5CAoAedVP>64A_J>O21
+Z30 V]^41FhLzY3X3SUl?CI0SV0
+R3
+R17
+R18
+R19
+Z31 L0 205
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@lab7_3_vlg_vec_tst

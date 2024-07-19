@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="JK_trigger">
+		<CBX_INST_ENTRY INSTANCE_NAME="|JK_trigger|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_okh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|JK_trigger|lpm_mux0:inst6|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_o4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|JK_trigger|lpm_mux0:inst7|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_o4e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

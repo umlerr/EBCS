@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Pract2_Misha">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Pract2_Misha|lpm_constant0:inst|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_3e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Pract2_Misha|lpm_constant1:inst4|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_4e6.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

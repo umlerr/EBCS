@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, D:/CODING/CADWork/Lab7/Lab7_3/Lab7_3.bdf
+source_file = 1, D:/CODING/CADWork/Lab7/Lab7_3/db/Lab7_3.cbx.xml
+design_name = Lab7_3
+instance = comp, \C~I , C, Lab7_3, 1
+instance = comp, \C~clkctrl , C~clkctrl, Lab7_3, 1
+instance = comp, \inst31~0 , inst31~0, Lab7_3, 1
+instance = comp, \inst16~0 , inst16~0, Lab7_3, 1
+instance = comp, \inst15~0 , inst15~0, Lab7_3, 1
+instance = comp, \inst24~0 , inst24~0, Lab7_3, 1
+instance = comp, \D[3]~I , D[3], Lab7_3, 1
+instance = comp, \D[2]~I , D[2], Lab7_3, 1
+instance = comp, \D[1]~I , D[1], Lab7_3, 1
+instance = comp, \D[0]~I , D[0], Lab7_3, 1

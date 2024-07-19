@@ -1,0 +1,44 @@
+|Lab6_2
+Q_out[0] <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[1] <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[2] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[3] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[4] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[5] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[6] <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[7] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[8] <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst5.IN0
+C => inst.CLK
+C => inst1.CLK
+C => inst2.CLK
+C => inst3.CLK
+C => inst4.CLK
+C => inst17.IN0
+Q_tact[0] <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+Q_tact[1] <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+Q_tact[2] <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+Q_tact[3] <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+Q_tact[4] <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+Q_tact[5] <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Q_tact[6] <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+Q_tact[7] <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+Q_tact[8] <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6_2|lpm_constant0:inst1236
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+
+
+|Lab6_2|lpm_constant0:inst1236|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+
+
+|Lab6_2|lpm_constant0:inst1237
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+
+
+|Lab6_2|lpm_constant0:inst1237|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+
+

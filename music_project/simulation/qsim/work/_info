@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CODING\CADWork\music_project\simulation\qsim
+vmusic_project
+Z1 !s100 Mbe_B@hgzn07M1gWMHBgf2
+Z2 IBi1hFKAEW_gWJNzD>gOcd3
+Z3 VJR33kGL5[GRR6UCd3V_f92
+Z4 dD:\CODING\CADWork\music_project\simulation\qsim
+Z5 w1713429702
+Z6 8music_project.vo
+Z7 Fmusic_project.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|music_project.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1713429703.148000
+Z12 !s107 music_project.vo|
+!s101 -O0
+vmusic_project_vlg_check_tst
+!i10b 1
+!s100 gAR`Y_z1kl2ET?mMPJHe92
+IHNIO0YXMZiXl@V<F1W<1:1
+Z13 VN^S_^LYfoB]M5zQ<9LU4^0
+R4
+Z14 w1713429701
+Z15 8music_project.vt
+Z16 Fmusic_project.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z17 !s108 1713429703.205000
+Z18 !s107 music_project.vt|
+Z19 !s90 -work|work|music_project.vt|
+!s101 -O0
+R10
+vmusic_project_vlg_sample_tst
+!i10b 1
+Z20 !s100 f;<PNknLUP1I:7_I0H0Q<0
+Z21 I[b3_7PYCl;XRz4^?LKbNR0
+Z22 VbUHDR3VDPeOaE6GEZJ8kG1
+R4
+R14
+R15
+R16
+L0 29
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10
+vmusic_project_vlg_vec_tst
+!i10b 1
+!s100 RzkJ;k``?l:GOVNjKgG]l2
+IHf0IS:]d7jQ^oMTUCUHFV1
+Z23 VK8V67oXXBH<8HAa:3=^:k2
+R4
+R14
+R15
+R16
+L0 314
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10

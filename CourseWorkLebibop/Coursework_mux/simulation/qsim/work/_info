@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CODING\CADWork\Coursework_mux\simulation\qsim
+vCoursework_mux
+Z1 I]>Z<EQZ[RZTCa2dXN2IcM3
+Z2 V?PV@`Q]EaKVMZY@i5[nYZ2
+Z3 dD:\CODING\CADWork\Coursework_mux\simulation\qsim
+Z4 w1714829439
+Z5 8Coursework_mux.vo
+Z6 FCoursework_mux.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@coursework_mux
+!i10b 1
+Z10 !s100 lK1zFdS_U?EI`BTmA8do52
+!s85 0
+Z11 !s108 1714829440.636000
+Z12 !s107 Coursework_mux.vo|
+Z13 !s90 -work|work|Coursework_mux.vo|
+!s101 -O0
+vCoursework_mux_vlg_check_tst
+!i10b 1
+!s100 l>aao940hXG2CGSJ<ZDmL0
+IULd8ZR_eoWf`>HSQ<d2WY1
+VgPei422kfkV_d3A0^PZN^3
+R3
+R4
+Z14 8Coursework_mux.vt
+Z15 FCoursework_mux.vt
+L0 69
+R7
+r1
+!s85 0
+31
+Z16 !s108 1714829440.699000
+Z17 !s107 Coursework_mux.vt|
+Z18 !s90 -work|work|Coursework_mux.vt|
+!s101 -O0
+R8
+n@coursework_mux_vlg_check_tst
+vCoursework_mux_vlg_sample_tst
+!i10b 1
+!s100 i;S3ABQX]O<HV[Q9Rd9Wz0
+Ih37KYM1oFR2JM9LE@4=V?2
+Vf4`f;;KWX^GLLRLimfdKR0
+R3
+R4
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@coursework_mux_vlg_sample_tst
+vCoursework_mux_vlg_vec_tst
+!i10b 1
+!s100 md[53eLMMF:cnmDIheRK62
+IJHjjfAM:_WhCo`AV]XacS2
+VD`JI_2>3]GMTWo`L]aYOj2
+R3
+R4
+R14
+R15
+L0 496
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@coursework_mux_vlg_vec_tst

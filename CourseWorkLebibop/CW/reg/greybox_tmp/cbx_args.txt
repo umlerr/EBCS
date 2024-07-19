@@ -1,0 +1,10 @@
+LPM_DIRECTION=RIGHT
+LPM_TYPE=LPM_SHIFTREG
+LPM_WIDTH=12
+DEVICE_FAMILY="Cyclone II"
+aclr
+clock
+data
+enable
+load
+q

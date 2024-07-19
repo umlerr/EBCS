@@ -1,0 +1,14 @@
+# do Pract2_Misha.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Pract2_Misha
+# 
+# Top level modules:
+# 	Pract2_Misha
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Pract2_Misha_vlg_sample_tst
+# -- Compiling module Pract2_Misha_vlg_check_tst
+# ** Error: Pract2_Misha.vt(64): near "1": syntax error, unexpected INTEGER NUMBER, expecting ')'
+# ** Error: d:/quatrus/qua/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./Pract2_Misha.do line 4

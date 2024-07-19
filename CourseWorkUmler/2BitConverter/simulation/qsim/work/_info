@@ -1,0 +1,141 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Education\EBCS\kurs\simulation\qsim
+v\Converter-2-Bit-Parallel-Code-To-PWM 
+!i10b 1
+!s100 `EXn:DD;eihAFGb]kl?bd3
+IjalP5LjffA3gl_YDiSYEL3
+VNn[0`:6F;DgOHB`h6m3Z71
+dD:\Education\EBCS\kurs2bit\simulation\qsim
+w1716221734
+Z1 8kurs.vo
+Z2 Fkurs.vo
+L0 31
+Z3 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1716221734.770000
+!s107 kurs.vo|
+Z4 !s90 -work|work|kurs.vo|
+!s101 -O0
+Z5 o-work work -O0
+n@134@converter-2-@bit-@parallel-@code-@to-@p@w@m@040
+v\Converter-20-Bit-Parallel-Code-To-PWM 
+Z6 IT6^3P_ZBYZ<zb_:2OCC:`2
+Z7 V<MO6X00?d;[4Q5GXAHRWh0
+Z8 dD:\Education\EBCS\kurs4bit\simulation\qsim
+Z9 w1716139465
+R1
+R2
+L0 31
+R3
+r1
+31
+R4
+R5
+Z10 n@134@converter-20-@bit-@parallel-@code-@to-@p@w@m@040
+Z11 !s100 zO;2coneU[3ZMPFOieK701
+Z12 !s108 1716139466.803000
+Z13 !s107 kurs.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+v\Converter-4-Bit-Parallel-Code-To-PWM 
+Z14 In=:KXloWBPe[S7kTHeicD2
+Z15 VEeCD9_j@2Ke^iJB_OEM;:3
+R8
+Z16 w1716142275
+R1
+R2
+L0 31
+R3
+r1
+31
+R4
+R5
+Z17 n@134@converter-4-@bit-@parallel-@code-@to-@p@w@m@040
+!i10b 1
+Z18 !s100 eD79g8I[g2cV<DA<565YN1
+!s85 0
+Z19 !s108 1716142275.520000
+R13
+!s101 -O0
+vkurs
+Z20 !s100 FO94OMWkV?_`OkfSJ7iAC0
+Z21 IQOEo<3EL@IaTdlh6=[;mS0
+Z22 V;;T2hf1zJf:?DO5YK;8Z41
+Z23 dD:\Education\EBCS\kurs\simulation\qsim
+Z24 w1716121431
+R1
+R2
+L0 31
+R3
+r1
+31
+R4
+R5
+Z25 !s108 1716121432.222000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vkurs_vlg_check_tst
+Z26 !s100 4eWgV;eb^XKA9A_YR2^<20
+Z27 IZRjTIFkdAFJG^B4^if4H80
+Z28 VE6zUh<kMBb>FLzPQodDkJ0
+R23
+R24
+Z29 8kurs.vt
+Z30 Fkurs.vt
+L0 57
+R3
+r1
+31
+Z31 !s108 1716121432.364000
+Z32 !s107 kurs.vt|
+Z33 !s90 -work|work|kurs.vt|
+R5
+!i10b 1
+!s85 0
+!s101 -O0
+vkurs_vlg_sample_tst
+Z34 !s100 9z1NlAiB6JZJLzz0KcFjZ3
+Z35 I^ah0@^NcH;nSHE>K=XMEM1
+Z36 Vf]9cHZ]b2>^FiV<Q1]H=b2
+R23
+R24
+R29
+R30
+L0 29
+R3
+r1
+31
+R31
+R32
+R33
+R5
+!i10b 1
+!s85 0
+!s101 -O0
+vkurs_vlg_vec_tst
+Z37 !s100 PfIMTGTh0AfgbmO9czH4[3
+Z38 Ii>4g4iB=[`XVZG9<FP5]42
+Z39 V@[7>N1Dod8;fNmWg7>i9j0
+R23
+R24
+R29
+R30
+Z40 L0 277
+R3
+r1
+31
+R31
+R32
+R33
+R5
+!i10b 1
+!s85 0
+!s101 -O0

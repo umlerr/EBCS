@@ -1,0 +1,293 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/11/2024 19:05:51"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Pract2_Misha
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Pract2_Misha_vlg_sample_tst(
+	x_1,
+	x_2,
+	x_3,
+	x_4,
+	sampler_tx
+);
+input  x_1;
+input  x_2;
+input  x_3;
+input  x_4;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(x_1 or x_2 or x_3 or x_4)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Pract2_Misha_vlg_check_tst (
+	1Y,
+	2Y,
+	y,
+	sampler_rx
+);
+input  1Y;
+input  2Y;
+input  y;
+input sampler_rx;
+
+reg  1Y_expected;
+reg  2Y_expected;
+reg  y_expected;
+
+reg  1Y_prev;
+reg  2Y_prev;
+reg  y_prev;
+
+reg  1Y_expected_prev;
+reg  2Y_expected_prev;
+reg  y_expected_prev;
+
+reg  last_1Y_exp;
+reg  last_2Y_exp;
+reg  last_y_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:3] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 3'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	1Y_prev = 1Y;
+	2Y_prev = 2Y;
+	y_prev = y;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	1Y_expected_prev = 1Y_expected;
+	2Y_expected_prev = 2Y_expected;
+	y_expected_prev = y_expected;
+end
+
+
+
+// expected 1Y
+initial
+begin
+	1Y_expected = 1'bX;
+end 
+
+// expected 2Y
+initial
+begin
+	2Y_expected = 1'bX;
+end 
+
+// expected y
+initial
+begin
+	y_expected = 1'bX;
+end 
+// generate trigger
+always @(1Y_expected or 1Y or 2Y_expected or 2Y or y_expected or y)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected 1Y = %b | expected 2Y = %b | expected y = %b | ",1Y_expected_prev,2Y_expected_prev,y_expected_prev);
+	$display("| real 1Y = %b | real 2Y = %b | real y = %b | ",1Y_prev,2Y_prev,y_prev);
+`endif
+	if (
+		( 1Y_expected_prev !== 1'bx ) && ( 1Y_prev !== 1Y_expected_prev )
+		&& ((1Y_expected_prev !== last_1Y_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port 1Y :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", 1Y_expected_prev);
+		$display ("     Real value = %b", 1Y_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_1Y_exp = 1Y_expected_prev;
+	end
+	if (
+		( 2Y_expected_prev !== 1'bx ) && ( 2Y_prev !== 2Y_expected_prev )
+		&& ((2Y_expected_prev !== last_2Y_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port 2Y :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", 2Y_expected_prev);
+		$display ("     Real value = %b", 2Y_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_2Y_exp = 2Y_expected_prev;
+	end
+	if (
+		( y_expected_prev !== 1'bx ) && ( y_prev !== y_expected_prev )
+		&& ((y_expected_prev !== last_y_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port y :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", y_expected_prev);
+		$display ("     Real value = %b", y_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_y_exp = y_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Pract2_Misha_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg x_1;
+reg x_2;
+reg x_3;
+reg x_4;
+// wires                                               
+wire 1Y;
+wire 2Y;
+wire y;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Pract2_Misha i1 (
+// port map - connection between master ports and signals/registers   
+	.\1Y (1Y),
+	.\2Y (2Y),
+	.x_1(x_1),
+	.x_2(x_2),
+	.x_3(x_3),
+	.x_4(x_4),
+	.y(y)
+);
+
+// x_4
+initial
+begin
+	repeat(6)
+	begin
+		x_4 = 1'b0;
+		x_4 = #80000 1'b1;
+		# 80000;
+	end
+	x_4 = 1'b0;
+end 
+
+// x_3
+initial
+begin
+	repeat(12)
+	begin
+		x_3 = 1'b0;
+		x_3 = #40000 1'b1;
+		# 40000;
+	end
+	x_3 = 1'b0;
+end 
+
+// x_2
+always
+begin
+	x_2 = 1'b0;
+	x_2 = #20000 1'b1;
+	#20000;
+end 
+
+// x_1
+always
+begin
+	x_1 = 1'b0;
+	x_1 = #10000 1'b1;
+	#10000;
+end 
+
+Pract2_Misha_vlg_sample_tst tb_sample (
+	.x_1(x_1),
+	.x_2(x_2),
+	.x_3(x_3),
+	.x_4(x_4),
+	.sampler_tx(sampler)
+);
+
+Pract2_Misha_vlg_check_tst tb_out(
+	.1Y(1Y),
+	.2Y(2Y),
+	.y(y),
+	.sampler_rx(sampler)
+);
+endmodule
+

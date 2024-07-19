@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\CODING\CADWork\Lab4\D_trigger\simulation\qsim
+vD_trigger
+Z1 IYmATPK<SY=Zl3=L87ha_X0
+Z2 VINaRoOaGiL81m@SAB9hj`1
+Z3 dD:\CODING\CADWork\Lab4\D_trigger\simulation\qsim
+Z4 w1712251205
+Z5 8D_trigger.vo
+Z6 FD_trigger.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|D_trigger.vo|
+Z9 o-work work -O0
+Z10 n@d_trigger
+!i10b 1
+Z11 !s100 [kS@OAG>P6JgWai;nTXEX1
+!s85 0
+Z12 !s108 1712251206.432000
+Z13 !s107 D_trigger.vo|
+!s101 -O0
+vD_trigger_vlg_check_tst
+!i10b 1
+Z14 !s100 ALL1dQX0NcNkhLE=iK38i2
+Z15 IOP_;=ImcIcg1VRJjIa60i3
+Z16 V^8b6SP[6W6]Rd1WCGFKj73
+R3
+R4
+Z17 8D_trigger.vt
+Z18 FD_trigger.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z19 !s108 1712251206.472000
+Z20 !s107 D_trigger.vt|
+Z21 !s90 -work|work|D_trigger.vt|
+!s101 -O0
+R9
+Z22 n@d_trigger_vlg_check_tst
+vD_trigger_vlg_sample_tst
+!i10b 1
+Z23 !s100 ZRIL`ceJ9O[o]?em1To@:0
+Z24 I@AXS5]DoL6<cE09k`ARZ?2
+Z25 VYl7o>:m?JY?>JI2MhonTQ0
+R3
+R4
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+Z26 n@d_trigger_vlg_sample_tst
+vD_trigger_vlg_vec_tst
+!i10b 1
+Z27 !s100 Tha;__ZmPm8W:<@`Wo<EL1
+Z28 I4?V3A9hOCN@`8Xi6eXHEf0
+Z29 V[B541:@f?_ZU=41OF1bhL3
+R3
+R4
+R17
+R18
+Z30 L0 315
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+Z31 n@d_trigger_vlg_vec_tst

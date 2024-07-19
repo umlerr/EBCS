@@ -1,0 +1,101 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Education\EBCS\kurs\simulation\qsim
+v\Converter-20-Bit-Parallel-Code-To-PWM 
+!i10b 1
+!s100 ;9z7AJ=<U6<ZgSb9DD;952
+I97J<JMi8hVBl7^STU@Aid2
+Vaa<k]Pe49gTB^7B?UFF4j2
+Z1 dD:\Education\EBCS\kurs\simulation\qsim
+w1716132565
+Z2 8kurs.vo
+Z3 Fkurs.vo
+L0 31
+Z4 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1716132566.205000
+!s107 kurs.vo|
+Z5 !s90 -work|work|kurs.vo|
+!s101 -O0
+Z6 o-work work -O0
+n@134@converter-20-@bit-@parallel-@code-@to-@p@w@m@040
+vkurs
+Z7 !s100 FO94OMWkV?_`OkfSJ7iAC0
+Z8 IQOEo<3EL@IaTdlh6=[;mS0
+Z9 V;;T2hf1zJf:?DO5YK;8Z41
+R1
+Z10 w1716121431
+R2
+R3
+L0 31
+R4
+r1
+31
+R5
+R6
+Z11 !s108 1716121432.222000
+Z12 !s107 kurs.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vkurs_vlg_check_tst
+Z13 !s100 4eWgV;eb^XKA9A_YR2^<20
+Z14 IZRjTIFkdAFJG^B4^if4H80
+Z15 VE6zUh<kMBb>FLzPQodDkJ0
+R1
+R10
+Z16 8kurs.vt
+Z17 Fkurs.vt
+L0 57
+R4
+r1
+31
+Z18 !s108 1716121432.364000
+Z19 !s107 kurs.vt|
+Z20 !s90 -work|work|kurs.vt|
+R6
+!i10b 1
+!s85 0
+!s101 -O0
+vkurs_vlg_sample_tst
+Z21 !s100 9z1NlAiB6JZJLzz0KcFjZ3
+Z22 I^ah0@^NcH;nSHE>K=XMEM1
+Z23 Vf]9cHZ]b2>^FiV<Q1]H=b2
+R1
+R10
+R16
+R17
+L0 29
+R4
+r1
+31
+R18
+R19
+R20
+R6
+!i10b 1
+!s85 0
+!s101 -O0
+vkurs_vlg_vec_tst
+Z24 !s100 PfIMTGTh0AfgbmO9czH4[3
+Z25 Ii>4g4iB=[`XVZG9<FP5]42
+Z26 V@[7>N1Dod8;fNmWg7>i9j0
+R1
+R10
+R16
+R17
+Z27 L0 277
+R4
+r1
+31
+R18
+R19
+R20
+R6
+!i10b 1
+!s85 0
+!s101 -O0
